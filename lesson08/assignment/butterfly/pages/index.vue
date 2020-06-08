@@ -17,23 +17,12 @@
     </div>
 
     <h2 style="font-size: 300%;">Let decadence be your guide. - Oscar Wilde</h2>
-       <div id="disclaimers">
-        <span v-bind:title="disclaimer">*</span>
-      </div>
+    <button v-on:click="disclaimer">disclaimer</button>
+
 
 
       <img src="https://images.unsplash.com/photo-1465505041184-f383907cc134?ixlib=rb-1.2.1&auto=format&fit=crop&w=778&q=80" width="300px" alt="a white butterfly sits on a purple flower">
 
-      <div class="links">
-
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
 
   </section>
 </template>
@@ -48,16 +37,22 @@ export default {
     //  navBar
   },
 
-
-
- let disclaimers = new Vue({
-    el: '#disclaimers',
+  new Vue({
+    el: '#app',
     data: {
-      disclaimer: 'Something he would have said.'
+      name: 'Vue.js'
+    },
+      methods: {
+      disclaimer: function (event) {
+        // `this` inside methods points to the Vue instance
+        alert('Something he would have said.')
+
+      }
     }
   })
-
 }
+
+
 
 </script>
 
