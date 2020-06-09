@@ -16,48 +16,29 @@
        <nuxt-link to="/butterfly-faq" class="butterlinks">Butterfly FAQ</nuxt-link>
     </div>
 
-    <h2 style="font-size: 300%;">Let decadence be your guide. - Oscar Wilde</h2>
-       <div id="disclaimers">
-        <span v-bind:title="disclaimer">*</span>
-      </div>
-
+    </modal>
 
       <img src="https://images.unsplash.com/photo-1465505041184-f383907cc134?ixlib=rb-1.2.1&auto=format&fit=crop&w=778&q=80" width="300px" alt="a white butterfly sits on a purple flower">
-
-      <div class="links">
-
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-
   </section>
 </template>
 
 <script>
 //import navBar from '@/components/navBar'
+import modal from '@/components/modal'
+import {toggle} from '@/components/mixins/toggle';
 import butterfly-header from "@/components/butterflyHeader";
 
 export default {
   components: {
-    'butterfly-header': butterflyHeader
+    'butterfly-header': butterflyHeader,
+    'modal': modal,
+    mixins: [toggle]
     //  navBar
   },
 
-
-
- let disclaimers = new Vue({
-    el: '#disclaimers',
-    data: {
-      disclaimer: 'Something he would have said.'
-    }
-  })
-
 }
+
+
 
 </script>
 
