@@ -26,13 +26,12 @@
 
 <script>
 import butterfly-header from "@/components/butterflyHeader";
-//import navBar from '@/components/navBar'
 import carousel from "./components/carousel.vue";
 
 export default {
   components: {
-    'butterfly-header': butterflyHeader,
-    //  navBar
+    name: 'butterfly-header'
+    name: 'carousel'
   },
 }
 </script>
