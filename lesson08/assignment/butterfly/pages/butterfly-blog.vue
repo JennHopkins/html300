@@ -36,51 +36,46 @@
 <script>
 
 export default {
-
+   name: 'bblog',
   data () {
-    return {
- new Vue({
- el: '#bBlog',
-  data: {
+      return {
+        //this is the array of blog titles and paragraphs of text.
+            blogs: [
 
-//this is the array of blog titles and paragraphs of text.
-    blogs: [
+               {
+                title: "Buterfly Love",
+                text: 'Butterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. Adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight. The group comprises the large superfamily Papilionoidea, which contains at least one former group, the skippers (formerly the superfamily "Hesperioidea"), and the most recent analyses suggest it also contains the moth-butterflies (formerly
+                the superfamily "Hedyloidea"). Butterfly fossils date to the Paleocene, about 56 million years ago.'
+                },
+               {
 
-       {
-        title: "Buterfly Love",
-        text: 'Butterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. Adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight. The group comprises the large superfamily Papilionoidea, which contains at least one former group, the skippers (formerly the superfamily "Hesperioidea"), and the most recent analyses suggest it also contains the moth-butterflies (formerly
-        the superfamily "Hedyloidea"). Butterfly fossils date to the Paleocene, about 56 million years ago.'
-        },
-       {
+               title: "The Care and Feeding of Your Butterfly",
+               text: 'Butterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. Adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight. The group comprises the large superfamily Papilionoidea, which contains at least one former group, the skippers (formerly the superfamily "Hesperioidea"), and the most recent analyses suggest it also contains the moth-butterflies (formerly
+               the superfamily "Hedyloidea"). Butterfly fossils date to the Paleocene, about 56 million years ago.'
+               },
 
-       title: "The Care and Feeding of Your Butterfly",
-       text: 'Butterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. Adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight. The group comprises the large superfamily Papilionoidea, which contains at least one former group, the skippers (formerly the superfamily "Hesperioidea"), and the most recent analyses suggest it also contains the moth-butterflies (formerly
-       the superfamily "Hedyloidea"). Butterfly fossils date to the Paleocene, about 56 million years ago.'
-       },
+              {
+              title: "Why butterflies make the best pets",
+              text: 'Butterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. Adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight. The group comprises the large superfamily Papilionoidea, which contains at least one former group, the skippers (formerly the superfamily "Hesperioidea"), and the most recent analyses suggest it also contains the moth-butterflies (formerly
+              the superfamily "Hedyloidea"). Butterfly fossils date to the Paleocene, about 56 million years ago.'
+               },
 
-      {
-      title: "Why butterflies make the best pets",
-      text: 'Butterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. Adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight. The group comprises the large superfamily Papilionoidea, which contains at least one former group, the skippers (formerly the superfamily "Hesperioidea"), and the most recent analyses suggest it also contains the moth-butterflies (formerly
-      the superfamily "Hedyloidea"). Butterfly fossils date to the Paleocene, about 56 million years ago.'
-       },
+              {
+               title: "Know your butterflies",
+               text: 'Butterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. Adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight. The group comprises the large superfamily Papilionoidea, which contains at least one former group, the skippers (formerly the superfamily "Hesperioidea"), and the most recent analyses suggest it also contains the moth-butterflies (formerly
+               the superfamily "Hedyloidea"). Butterfly fossils date to the Paleocene, about 56 million years ago.'
+               },
+              {
+              title: "Which is the right butterfly for you?",
+             text: 'Butterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. Adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight. The group comprises the large superfamily Papilionoidea, which contains at least one former group, the skippers (formerly the superfamily "Hesperioidea"), and the most recent analyses suggest it also contains the moth-butterflies (formerly
+             the superfamily "Hedyloidea"). Butterfly fossils date to the Paleocene, about 56 million years ago.'
+               }
+            ]
+          };
+        }
+      }
 
-      {
-       title: "Know your butterflies",
-       text: 'Butterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. Adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight. The group comprises the large superfamily Papilionoidea, which contains at least one former group, the skippers (formerly the superfamily "Hesperioidea"), and the most recent analyses suggest it also contains the moth-butterflies (formerly
-       the superfamily "Hedyloidea"). Butterfly fossils date to the Paleocene, about 56 million years ago.'
-       },
-      {
-      title: "Which is the right butterfly for you?",
-     text: 'Butterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. Adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight. The group comprises the large superfamily Papilionoidea, which contains at least one former group, the skippers (formerly the superfamily "Hesperioidea"), and the most recent analyses suggest it also contains the moth-butterflies (formerly
-     the superfamily "Hedyloidea"). Butterfly fossils date to the Paleocene, about 56 million years ago.'
-       }
-    ]
-   }
-});
-   }
-  }
-}
-*/
+
 //This is to make the tooltip work
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
